@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Input Tanggal</title>
+</head>
+<body>
+    <center>
+        <form method="post">
+            <table border="0">
+            <!-- Menggunakan tag type="date" untuk memvalidasi agar input berupa format tanggal-->
+                <tr>
+                    <td width="150">Nama Lengkap :</td>
+                        <td><input type="text" name="nama" placeholder="Masukkan Nama Lengkap Anda" maxlength="none" size="30" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Username :</td>
+                        <td><input type="text" placeholder="Masukkan Username" size="30" maxlength="12"required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Password :</td>
+                        <td><input type="text" placeholder="Masukkan Password" size="30" maxlength="8" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Tanggal Lahir :</td>
+                        <td><input type="date" name="birth" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Email :</td>
+                        <td><input type="text" placeholder="Masukkan Alamat E-mail Anda" size="30" maxlength="16" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Telepon :</td>
+                        <td><input type="number" placeholder="Masukkan Nomor Telepon Anda" size="30" maxlength="12" required/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br></br>
+                        <td><input type="submit" value="Buat Akun Saya"></input></td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    
+</body>
+</html>

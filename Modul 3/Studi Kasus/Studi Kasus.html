@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi HTML5 </title>
+</head>
+<body style="font-family: sans-serif;">
+    <center>
+        <form method="post">
+            <h2>Studi Kasus : Validasi HTML5</h2>
+            <table border="0">
+            <!--
+                Menggunakan atribut placeholder="" untuk menambahkan keterangan pada input tag.
+            -->
+                <tr>
+                    <td width="100">Nama </td>
+                    <td>:</td>
+                        <td><input type="text" name="nama" placeholder="Masukkan Nama Anda" maxlength="none" size="30" pattern="[a-zA-Z ]+" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Usia</td>
+                    <td>:</td>
+                    <td><input type="number" name="age" min="17" max="30" pattern="[0-9]+" required/>(Usia min 17 max 30)</td>
+                </tr>
+                <tr>
+                    <td width="150">Email </td>
+                    <td>:</td>
+                        <td><input type="text" placeholder="namaemail@gmail.com" name="email" size="30" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Nomor Telepon </td>
+                    <td>:</td>
+                        <td><input type="number" size="30" minlength="12" maxlength="13" required/></td>
+                </tr>
+                <tr>
+                    <td width="150">Password </td>
+                    <td>:</td>
+                        <td><input type="password" placeholder="Masukkan Password" size="30" maxlength="8" id="inputPassword" required/>
+                            <input type="checkbox" onclick="myFunction()">Tampilkan Password
+                            <script>
+                                function myFunction() 
+                                {
+                                    var x = document.getElementById("inputPassword");
+                                    if (x.type === "password") 
+                                    {
+                                        x.type = "text";
+                                    } 
+                                    else 
+                                    {
+                                        x.type = "password";
+                                    }
+                                }
+                            </script>
+                            </td>
+                        
+                </tr>
+                <tr>
+                    <td width="150">Web </td>
+                    <td>:</td>
+                        <td><input type="url" placeholder="http://" name="http://" size="30" maxlength="none" required/><b><i>(Bonus)</i></b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br></br>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></input></td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    
+</body>
+</html>
