@@ -11,9 +11,6 @@
         <form method="post">
             <h2>Studi Kasus : Validasi HTML5</h2>
             <table border="0">
-            <!--
-                Menggunakan atribut placeholder="" untuk menambahkan keterangan pada input tag.
-            -->
                 <tr>
                     <td width="100">Nama </td>
                     <td>:</td>
@@ -32,28 +29,12 @@
                 <tr>
                     <td width="150">Nomor Telepon </td>
                     <td>:</td>
-                        <td><input type="number" size="30" minlength="12" maxlength="13" required/></td>
+                        <td><input type="number" name="Telepon" size="30" minlength="14" maxlength="15" required placeholder="+62"/></td>
                 </tr>
                 <tr>
                     <td width="150">Password </td>
                     <td>:</td>
-                        <td><input type="password" placeholder="Masukkan Password" size="30" maxlength="8" id="inputPassword" required/>
-                            <input type="checkbox" onclick="myFunction()">Tampilkan Password
-                            <script>
-                                function myFunction() 
-                                {
-                                    var x = document.getElementById("inputPassword");
-                                    if (x.type === "password") 
-                                    {
-                                        x.type = "text";
-                                    } 
-                                    else 
-                                    {
-                                        x.type = "password";
-                                    }
-                                }
-                            </script>
-                            </td>
+                        <td><input type="password" placeholder="Masukkan Password" size="30" maxlength="8" required/></td>
                         
                 </tr>
                 <tr>
