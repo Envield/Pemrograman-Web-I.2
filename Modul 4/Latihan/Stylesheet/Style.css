@@ -1,0 +1,13 @@
+.sp1
+{
+    color: darkgreen;
+    font-style: normal;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 18px;
+}
+#sp2
+{
+    color: olive;
+    font-style: oblique;
+}
