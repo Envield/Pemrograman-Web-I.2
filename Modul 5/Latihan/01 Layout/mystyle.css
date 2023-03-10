@@ -1,0 +1,57 @@
+#wrapper 
+{
+    margin: auto;
+    width: 750px;
+    border: 1px solid red;
+}
+
+#header
+{
+    height: 60px;
+    border: 2px solid black;
+}
+
+#inner
+{
+    float: left;
+    margin: 5px 00px;
+    width: 750px;
+    border: 1px solid purple;
+}
+
+#sidebar
+{
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: justify-content;
+    border: 2px solid olive;
+}
+
+#content
+{
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: fit-content;
+    border: 2px solid brown;
+}
+
+.textbox
+{
+    font-family: monospace;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+#footer
+{
+    clear: both;
+    height: 50px;
+    border: 1px solid blue;
+}
