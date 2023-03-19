@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*Menerapkan Query di media Iphone 6 (375px)*/
+        .smartphone 
+        {
+            display: none; /*Mengawali pengaturan dengan default display none*/
+        }
+        @media only screen and (max-width: 375px)
+        {
+            body
+            {
+                background-color: yellowgreen;
+            }
+            .smartphone
+            {
+                display: block; /*Menggunakan display block setelah penambahan warna pada body*/
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h3>Menggunakan Media Query di CSS3</h3>
+    <div class="smartphone">
+        <h2>Ukuran Smartphone terdeteksi</h2>
+    </div>
+    </center>
+</body>
+</html>
