@@ -1,0 +1,17 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.sign
+{
+    width: 360px;
+    margin: 0 auto;
+    height: min-content;
+    padding: 20px;
+    border: 1px solid rgb(223, 221, 221);
+}
